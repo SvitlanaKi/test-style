@@ -1,5 +1,4 @@
 /** @format */
-
 .selector {
 }
 .selector-style {
@@ -51,8 +50,7 @@
   line-height: 28px;
   width: 134px;
   height: 52px;
-  left: 573px;
-  top: 2722px;
+  cursor: pointer;
   background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
   border-radius: 74px;
 }
