@@ -1,4 +1,9 @@
 /** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .selector {
 }
 .selector-style {
@@ -37,8 +42,37 @@
   height: 1px;
   background-color: #595959;
 }
+.conteiner {
+}
 .movies {
 }
+.movie {
+}
+.poster {
+}
+.move_dark {
+}
+.movie_info {
+}
+.name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #121010;
+}
+.genre_movie {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #b7b7b7;
+}
+.stars {
+}
+
 .button {
   padding-top: 40px;
 }
