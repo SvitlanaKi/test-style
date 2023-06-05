@@ -11,24 +11,31 @@ body {
 .conteiner {
   max-width: 1240px;
   margin: 0 auto;
+  padding-left: 20px;
 }
-/**/
+
+/*---------mobile----------*/
 .mylibrary_movies_section {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 .mylibrary_movies {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
   gap: 16px;
+}
+.mylibrary_poster_img {
+  width: 280px;
+  height: 406px;
 }
 .mylibrary_movie {
   position: relative;
-  width: 395px;
-  height: 574px;
+  width: 280px;
+  height: 406px;
 }
-.mylibrary_movie:hover {
+mylibrary_movie:hover {
   /*box-shadow: 0px 0px 5px 4px rgba(248, 65, 25, 1);*/
   box-shadow: 0px 4px 4px orange, -0.5em 0 0.4em rgb(158, 145, 3);
   /*box-shadow: 10px 5px 5px orange;*/
@@ -48,59 +55,136 @@ body {
   );
   border-radius: 5px;
 }
-
 .mylibrary_movies_name {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.15;
+  font-size: 12px;
+  line-height: 1.6;
   text-transform: uppercase;
   color: #ffffff;
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-left: 20px;
-  margin-bottom: 50px;
+  padding-left: 12px;
+  padding-bottom: 30px;
 }
 .mylibrary__genre_movie {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.4;
   color: #b7b7b7;
   position: absolute;
   bottom: 0;
   left: 0;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding-left: 12px;
+  padding-bottom: 12px;
 }
-
-/**/
 .mylibrary_stars {
   position: absolute;
   bottom: 0;
   right: 0;
   color: #ffffff;
-  padding-bottom: 20px;
-  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-right: 12px;
 }
 .mylibrary_button {
-  display: grid;
-  place-items: center;
-  padding-bottom: 96px;
+  opacity: 0;
 }
-.mylibrary_button-order {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.5;
-  width: 134px;
-  height: 52px;
-  cursor: pointer;
-  background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
-  border-radius: 74px;
-  left: 0;
+
+/*---------mobile----------*/
+
+/*---------tablet----------*/
+@media screen and (min-width: 768px) {
+  .mylibrary_movies_section {
+    padding-top: 35px;
+    padding-bottom: 40px;
+  }
+  .mylibrary_movies {
+    gap: 28px 16px;
+  }
+  .mylibrary_movie {
+    width: 224px;
+    height: 325px;
+  }
+  .mylibrary_poster_img {
+    width: 224px;
+    height: 325px;
+  }
+  .mylibrary_movies_name {
+    line-height: 1.5;
+    padding-left: 12px;
+    padding-bottom: 30px;
+  }
+  .mylibrary__genre_movie {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .mylibrary_button {
+    display: grid;
+    place-items: center;
+    padding-bottom: 60px;
+    opacity: 1;
+  }
+  .mylibrary_button-order {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    width: 115px;
+    height: 40px;
+    cursor: pointer;
+    background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
+    border-radius: 74px;
+    left: 0;
+  }
+  .mylibrary_button-order:focus {
+    background: #ffffff;
+    color: #f87719;
+    border-color: #f87719;
+  }
 }
-.mylibrary_button-order:focus {
-  background: #ffffff;
-  border-radius: 74px;
-  color: #f87719;
-  border-color: #f87719;
+
+/*---------tablet----------*/
+/*---------desktop----------*/
+@media screen and (min-width: 1280px) {
+  .mylibrary_movies_section {
+    padding-top: 40px;
+  }
+  .mylibrary_movies {
+    gap: 32px 16px;
+  }
+  .mylibrary_movie {
+    width: 395px;
+    height: 574px;
+  }
+  .mylibrary_poster_img {
+    width: 395px;
+    height: 574px;
+  }
+  .mylibrary_movies_name {
+    font-size: 20px;
+    line-height: 1.15;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .mylibrary__genre_movie {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  mylibrary__genre_movie {
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .mylibrary_button {
+    padding-bottom: 96px;
+  }
+  .mylibrary_button-order {
+    font-size: 18px;
+    line-height: 1.5;
+    width: 134px;
+    height: 52px;
+  }
 }
+/*---------desktop----------*/
