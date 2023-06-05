@@ -162,7 +162,7 @@ a:visited {
   .mylibrary_genre_movie {
     font-weight: 500;
     line-height: 1.4;
-    color: --secondary-text-color;
+    color: #b7b7b7;
     position: absolute;
     bottom: 0;
     left: 0;
