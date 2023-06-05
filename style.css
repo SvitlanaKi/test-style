@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   gap: 16px;
 }
 .mylibrary_poster_img {
@@ -35,7 +35,7 @@ body {
   width: 280px;
   height: 406px;
 }
-mylibrary_movie:hover {
+.mylibrary_movie:hover {
   /*box-shadow: 0px 0px 5px 4px rgba(248, 65, 25, 1);*/
   box-shadow: 0px 4px 4px orange, -0.5em 0 0.4em rgb(158, 145, 3);
   /*box-shadow: 10px 5px 5px orange;*/
@@ -128,8 +128,8 @@ mylibrary_movie:hover {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    width: 115px;
-    height: 40px;
+    padding: 12px 24px;
+    width: auto;
     cursor: pointer;
     background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
     border-radius: 74px;
