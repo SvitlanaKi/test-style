@@ -123,8 +123,8 @@ a:visited {
     height: 406px;
   }
   .mylibrary_movie:hover {
-    /*box-shadow: 0px 0px 5px 4px rgba(248, 65, 25, 1);*/
-    box-shadow: 0px 4px 4px orange, -0.5em 0 0.4em rgb(158, 145, 3);
+    box-shadow: 0px 0px 5px 4px #f87719;
+    /*box-shadow: 0px 4px 4px orange, -0.5em 0 0.4em rgb(158, 145, 3);*/
     /*box-shadow: 10px 5px 5px orange;*/
     border-radius: 4px;
   }
@@ -133,7 +133,8 @@ a:visited {
     height: 100%;
     overflow: hidden;
   }
-  .mylibrary_move_dark {
+  .mylibrary_poster::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

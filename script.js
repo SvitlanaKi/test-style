@@ -29,3 +29,19 @@ function initRatings() {
     ratingActive.style.width = `${setRatingActiveWidth}%`;
   }
 }
+///////
+const selectContainer = document.querySelector(".custom-select");
+const selectedOption = selectContainer.querySelector(".selected-option");
+const dropdownContent = selectContainer.querySelector(".dropdown-content");
+
+selectedOption.addEventListener("click", function () {
+  dropdownContent.style.display =
+    dropdownContent.style.display === "block" ? "none" : "block";
+});
+
+dropdownContent.addEventListener("click", function (event) {
+  if (event.target.classList.contains("option")) {
+    selectedOption.textContent = event.target.textContent;
+    dropdownContent.style.display = "none";
+  }
+});
