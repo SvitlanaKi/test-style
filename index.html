@@ -12,50 +12,42 @@
 <body>
     <section class="mylibrary_movies_section">
         <div class="container">
-            <select class="custom-select" name="" id="js-genre-select">
-                <option class="select-option" value="">wrap</option>
-                <option class="select-option" value="">pop</option>
-                <option class="select-option" value="">push</option>
+            <button id="clear-lib-btn">Clear Library</button>
+            <select name="" id="js-genre-select">
+                <option value="1">All Genres</option>
             </select>
-            <ul class="mylibrary_movies" id="js-lib-list">
+            <ul class="mylibrary_movies" id="js-lib-list" data-modal-open>
                 <li class="mylibrary_movie">
-                    <div class="mylibrary_poster">
-                        <img src="./img/poster.jpg" alt="">
+                    <div class="mylibrary_dark">
+                        <img src="https://image.tmdb.org/t/p/original${poster_path}" alt="${movieTitle}" />
                     </div>
-                    <h3 class="mylibrary_movies_name">ddddd</h3>
-                    <p class="mylibrary_genre_movie">ddggg</p>
-                    <div class="mylibrary_stars"></div>
-                </li>
-                <li class="mylibrary_movie">
-                    <div class="mylibrary_poster">
-                        <img src="./img/poster.jpg" alt="">
+                    <div class="mylibrary_overlay is-id" data-id=${id}></div>
+                    <div class="mylibrary_info">
+                        <h3 class="mylibrary_movies_name">${movieTitle}</h3>
+                        <p class="mylibrary_genre_movie">${genreNames.join(
+                            ' '
+                            )} | ${movieReleaseYear.substring(0, 4)}</p>
                     </div>
-                    <h3 class="mylibrary_movies_name">ddddd</h3>
-                    <p class="mylibrary_genre_movie">ddggg</p>
-                    <div class="mylibrary_stars"></div>
-                </li>
-                <li class="mylibrary_movie">
-                    <div class="mylibrary_poster">
-                        <img src="./img/poster.jpg" alt="">
+
+                    <div class="hero_star_raiting">
+                        <span>
+                            <div class="Stars thisstars" style="--rating: ${
+              vote_average / 2
+            }; " aria-label="Rating of this product is ${(
+    vote_average / 2
+  ).toFixed(1)} out of 5.">
+                        </span>
                     </div>
-                    <h3 class="mylibrary_movies_name">ddddd</h3>
-                    <p class="mylibrary_genre_movie">ddggg</p>
-                    <div class="mylibrary_stars"></div>
-                </li>
-                <li class="mylibrary_movie">
-                    <div class="mylibrary_poster">
-                        <img src="./img/poster.jpg" alt="">
-                    </div>
-                    <h3 class="mylibrary_movies_name">ddddd</h3>
-                    <p class="mylibrary_genre_movie">ddggg</p>
-                    <div class="mylibrary_stars"></div>
                 </li>
             </ul>
             <div class="mylibrary_button">
-                <button type="button" class="mylibrary_button-order" id="js-loadMore-btn">Load more</button>
+                <button type="button" class="mylibrary_button-order" id="js-loadMore-btn">
+                    Load more
+                </button>
             </div>
         </div>
     </section>
+
 
     <script src="./script.js"></script>
 </body>
